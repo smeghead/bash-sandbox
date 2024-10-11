@@ -1,0 +1,9 @@
+services:
+  bash:
+    container_name: bash
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    working_dir: /usr/src
+    volumes:
+      - ./:/usr/src
